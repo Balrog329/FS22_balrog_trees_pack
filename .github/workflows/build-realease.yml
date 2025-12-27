@@ -34,8 +34,10 @@ jobs:
         run: |
           mkdir build
           rsync -av \
+            --exclude='.git' \
+            --exclude='git/*' \
             --exclude='.github' \
-            --exclude='README.md' \
+            --exclude='readme.md' \
             --exclude='CHANGELOG.md' \
             --exclude='version.txt' \
             ./ build/

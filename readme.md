@@ -14,7 +14,7 @@ The i3d tree models come from several different maps, and include:
 Most species can be purchased in pallets of 316 seedlings from the shop and placed through the construction menu.
 Their size, shape, and growth speed vary depending on the species to better reflect realistic forest dynamics.
 
-## 📥 Télécharger la dernière version
+## 📥 download the latest version
 
 👉 [download the mod (release)](https://github.com/Balrog329/FS22_balrog_trees_pack/releases/latest)
 
