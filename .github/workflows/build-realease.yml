@@ -1,12 +1,12 @@
-name: Build Mod ZIP
+name: Build and Release Mod
 
-permissions:
-  contents: write
-  
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -37,20 +37,27 @@ jobs:
             --exclude='.github' \
             --exclude='README.md' \
             --exclude='CHANGELOG.md' \
-            --exclude='dist' \
             --exclude='version.txt' \
             ./ build/
 
       - name: Créer le ZIP
         run: |
-          mkdir -p dist
           cd build
-          zip -r "../dist/FS22_balrog_trees_pack_V${{ steps.version.outputs.version }}.zip" .
+          zip -r "../FS22_balrog_trees_pack_v${{ steps.version.outputs.version }}.zip" .
 
-      - name: Commit & push ZIP + version
+      - name: Créer la release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          name: "FS22 Balrog Trees Pack v${{ steps.version.outputs.version }}"
+          files: FS22_balrog_trees_pack_v${{ steps.version.outputs.version }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit version.txt
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add dist version.txt
-          git commit -m "Build v${{ steps.version.outputs.version }}"
+          git add version.txt
+          git commit -m "Update version to v${{ steps.version.outputs.version }}"
           git push
