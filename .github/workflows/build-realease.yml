@@ -18,17 +18,15 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Lire la version actuelle
+      - name: Lire et incrémenter la version
         id: version
         run: |
-          if [ -f version.txt ]; then
-            v=$(cat version.txt)
-            v=$((v+1))
-          else
-            v=1
-          fi
-          echo $v > version.txt
-          echo "version=$v" >> $GITHUB_OUTPUT
+          version=$(cat version.txt)
+          IFS='.' read -r major minor patch <<< "$version"
+          patch=$((patch+1))
+          new_version="$major.$minor.$patch"
+          echo "$new_version" > version.txt
+          echo "version=$new_version" >> $GITHUB_OUTPUT
 
       - name: Préparer les fichiers du mod
         run: |
