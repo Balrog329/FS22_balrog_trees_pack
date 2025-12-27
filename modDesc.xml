@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="65">
+    <author>Balrog329</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>balrog_trees_pack</en>
+        <fr>pack d'arbre de balrog</fr>
+    </title>
+    <description>
+	<en>more trees for forestry</en>
+	<fr>plus d'arbres pour l'exploitation forestière</fr>
+    </description>
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+	
+	<extraSourceFiles>
+        <sourceFile filename="scripts/newTreeTypes.lua" />
+    </extraSourceFiles>	
+	
+    <storeItems>	
+        <storeItem xmlFilename="treeSaplingPallet/treeSaplingPallet316.xml" rootNode="vehicle"/>	
+		<storeItem xmlFilename="trees/lodgepolePine/lodgepolePine_stage01.xml"/>
+		<storeItem xmlFilename="trees/lodgepolePine/lodgepolePine_stage02.xml"/>
+		<storeItem xmlFilename="trees/lodgepolePine/lodgepolePine_stage03.xml"/>
+		<storeItem xmlFilename="trees/ponderosaPine/ponderosaPine_stage01.xml"/>
+		<storeItem xmlFilename="trees/ponderosaPine/ponderosaPine_stage02.xml"/>
+		<storeItem xmlFilename="trees/ponderosaPine/ponderosaPine_stage03.xml"/>
+		<storeItem xmlFilename="trees/aspen/aspen_stage01.xml"/>
+		<storeItem xmlFilename="trees/aspen/aspen_stage02.xml"/>
+		<storeItem xmlFilename="trees/aspen/aspen_stage03.xml"/>
+		<storeItem xmlFilename="trees/aspen/aspen_stage04.xml"/>
+		<storeItem xmlFilename="trees/tallBirch/tallBirch_stage01.xml"/>
+		<storeItem xmlFilename="trees/tallBirch/tallBirch_stage02.xml"/>
+		<storeItem xmlFilename="trees/tallBirch/tallBirch_stage03.xml"/>
+		<storeItem xmlFilename="trees/tallBirch/tallBirch_stage04.xml"/>
+		<storeItem xmlFilename="trees/tallBirch/tallBirch_stage05.xml"/>
+		<storeItem xmlFilename="trees/silverFir/silverFir_stage01.xml"/>
+		<storeItem xmlFilename="trees/silverFir/silverFir_stage02.xml"/>
+		<storeItem xmlFilename="trees/silverFir/silverFir_stage03.xml"/>
+		<storeItem xmlFilename="trees/silverFir/silverFir_stage04.xml"/>
+		<storeItem xmlFilename="trees/silverFir/silverFir_stage05.xml"/>
+		<storeItem xmlFilename="trees/deadwood/deadwood.xml"/>
+		<storeItem xmlFilename="trees/picea_abies/picea_stage01.xml"/>
+		<storeItem xmlFilename="trees/picea_abies/picea_stage02.xml"/>
+		<storeItem xmlFilename="trees/picea_abies/picea_stage03.xml"/>
+		<storeItem xmlFilename="trees/picea_abies/picea_stage04.xml"/>
+		<storeItem xmlFilename="trees/picea_abies/picea_stage05.xml"/>
+
+
+    </storeItems>	
+	<l10n>
+	    <text name="treeType_deadwood">
+            <en>dead wood</en>
+            <fr>bois mort</fr>
+		</text>
+	    <text name="treeType_tallBirch">
+            <en>tall birch</en>
+            <fr>grand bouleau</fr>
+		</text>
+	    <text name="treeType_lodgepolePine">
+            <en>lodgepole pine</en>
+            <fr>pin tordu</fr>
+		</text>
+	    <text name="treeType_ponderosaPine">
+            <en>ponderosa pine</en>
+            <fr>pin ponderosa</fr>
+		</text>
+	    <text name="treeType_aspen">
+            <en>aspen</en>
+            <fr>peuplier tremble</fr>
+		</text>
+	    <text name="treeType_silverFir">
+            <en>silver fir</en>
+            <fr>sapin pectiné</fr>
+		</text>
+		<text name="fillType_316_Saplings">
+          <en>316 saplings</en>
+          <fr>316 plants d'arbres</fr>		  
+        </text>
+        <text name="storeItem_deadwood">
+          <en>dead wood</en>
+          <fr>bois mort</fr>
+        </text>
+		<text name="storeItem_tallBirch_stage01">
+		  <en>young birch</en>
+		  <fr>jeune bouleau</fr>
+		</text>
+		<text name="storeItem_tallBirch_stage02">
+		  <en>little birch</en>
+		  <fr>petit bouleau</fr>
+		</text>
+		<text name="storeItem_tallBirch_stage03">
+		  <en>mid birch</en>
+		  <fr>bouleau moyen</fr>
+		</text>
+		<text name="storeItem_tallBirch_stage04">
+		  <en>tall birch</en>
+		  <fr>grand bouleau</fr>
+		</text>
+		<text name="storeItem_tallBirch_stage05">
+		  <en>old birch</en>
+		  <fr>vieux bouleau</fr>
+		</text>
+		<text name="storeItem_lodgepolePine_stage01">
+		  <en>young lodgepole pine</en>
+		  <fr>jeune pin tordu</fr>
+		</text>
+		<text name="storeItem_lodgepolePine_stage02">
+		  <en>mid lodgepole pine</en>
+		  <fr>pin tordu moyen</fr>
+		</text>
+		<text name="storeItem_lodgepolePine_stage03">
+		  <en>tall lodgepole pine</en>
+		  <fr>grand pin tordu</fr>
+		</text>
+		<text name="storeItem_ponderosaPine_stage01">
+		  <en>young ponderosa pine</en>
+		  <fr>jeune pin ponderosa</fr>
+		</text>
+		<text name="storeItem_ponderosaPine_stage02">
+		  <en>little ponderosa pine</en>
+		  <fr>petit pin ponderosa</fr>
+		</text>
+		<text name="storeItem_ponderosaPine_stage03">
+		  <en>adult ponderosa pine</en>
+		  <fr>pin ponderosa adulte</fr>
+		</text>
+		<text name="storeItem_aspen_stage01">
+		  <en>aspen bush</en>
+		  <fr>fourré de peuplier tremble</fr>
+		</text>
+		<text name="storeItem_aspen_stage02">
+		  <en>young aspen</en>
+		  <fr>jeune peuplier tremble</fr>
+		</text>
+		<text name="storeItem_aspen_stage03">
+		  <en>mid aspen</en>
+		  <fr>peuplier tremble moyen</fr>
+		</text>
+		<text name="storeItem_aspen_stage04">
+		  <en>adult aspen</en>
+		  <fr>peuplier tremble adulte</fr>
+		</text>
+		<text name="storeItem_silverFir_stage01">
+		  <en>young silver fir</en>
+		  <fr>jeune sapin pectiné</fr>
+		</text>
+		<text name="storeItem_silverFir_stage02">
+		  <en>perch of silver fir</en>
+		  <fr>perche de sapin pectiné</fr>
+		</text>
+		<text name="storeItem_silverFir_stage03">
+		  <en>little silver fir</en>
+		  <fr>petit bois de sapin pectiné</fr>
+		</text>
+		<text name="storeItem_silverFir_stage04">
+		  <en>mid silver fir</en>
+		  <fr>bois moyen de sapin pectiné</fr>
+		</text>
+		<text name="storeItem_silverFir_stage05">
+		  <en>tall silver fir</en>
+		  <fr>grand sapin pectiné</fr>
+		</text>
+		<text name="storeItem_silverFir_stage06">
+		  <en>old silver fir</en>
+		  <fr>vieux sapin pectiné</fr>
+		</text>
+
+		<text name="storeItem_picea_stage01">
+		  <en>young spruce</en>
+		  <fr>jeune epicea commun</fr>
+		</text>
+		<text name="storeItem_picea_stage02">
+		  <en>little spruce</en>
+		  <fr>petit epicea commun</fr>
+		</text>
+		<text name="storeItem_picea_stage03">
+		  <en>mid spruce</en>
+		  <fr>epicea commun moyen</fr>
+		</text>
+		<text name="storeItem_picea_stage04">
+		  <en>tall spruce</en>
+		  <fr>grand epicea commun</fr>
+		</text>
+		<text name="storeItem_picea_stage05">
+		  <en>old spruce</en>
+		  <fr>vieil epicea commun</fr>
+		</text>
+	</l10n>
+</modDesc>

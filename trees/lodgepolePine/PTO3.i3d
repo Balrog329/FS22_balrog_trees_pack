@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="PTO3.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="15" filename="$data/shaders/treeBillboardShader.xml"/>
+    <File fileId="9" filename="$data/shaders/treeBranchShader.xml"/>
+    <File fileId="3" filename="$data/shaders/treeTrunkShader.xml"/>
+    <File fileId="10" filename="texturelodgepolePine/lodgepolePineLOD1_diffuse.png"/>
+    <File fileId="11" filename="texturelodgepolePine/lodgepolePineLOD1_normal.png"/>
+    <File fileId="12" filename="texturelodgepolePine/lodgepolePineLOD1_specular.png"/>
+    <File fileId="13" filename="texturelodgepolePine/lodgepolePineStage03Var2LOD2_diffuse.png"/>
+    <File fileId="14" filename="texturelodgepolePine/lodgepolePineStage03Var2LOD2_normal.png"/>
+    <File fileId="1" filename="texturelodgepolePine/lodgepolePineTrunk_diffuse.png"/>
+    <File fileId="5" filename="texturelodgepolePine/lodgepolePineTrunk_height.png"/>
+    <File fileId="2" filename="texturelodgepolePine/lodgepolePineTrunk_normal.png"/>
+    <File fileId="6" filename="texturelodgepolePine/lodgepolePine_diffuse.png"/>
+    <File fileId="7" filename="texturelodgepolePine/lodgepolePine_normal.png"/>
+    <File fileId="8" filename="texturelodgepolePine/lodgepolePine_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lodgepolePine_mat" materialId="5" customShaderId="9">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="lodgepolePineLOD1_mat" materialId="6" customShaderId="9" shadingRate="2x2">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="lodgepolePineStage03LOD2_mat" materialId="7" customShaderId="15" customShaderVariation="billboard180" shadingRate="2x4">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+    </Material>
+    <Material name="lodgepolePineTrunk_mat" materialId="8" customShaderId="3" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="mParallaxMap" fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="PTO3.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="lodgepolePine_stage03Var2" rotation="5.00896e-06 83.5956 5.00896e-06" clipDistance="700" nodeId="15" lodDistance="0 40 90">
+        <Shape shapeId="1" name="lodgepolePineStage03Var2LOD0" static="true" collisionMask="16791586" angularDamping="0.15" rollingFriction="0.27" density="0.52" nodeId="16" materialIds="8" receiveShadows="true" splitType="21" splitUvs="0 0 1 0.0625 1.8">
+          <Shape shapeId="2" name="lodgepolePineStage03Var2LOD0Attachments" lockedgroup="true" nodeId="17" materialIds="5" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="lodgepolePineStage03Var2LOD1" nodeId="18" materialIds="8" receiveShadows="true">
+          <Shape shapeId="4" name="branchesLOD1" nodeId="19" materialIds="6" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="lodgepolePineStage03Var2LOD2" nodeId="20" materialIds="7" receiveShadows="true"/>
+        <TransformGroup name="shadowProxy_LOD" static="true" nodeId="21" lodDistance="0 40">
+          <Shape shapeId="3" name="proxyMeshLOD1" nodeId="22" materialIds="8" castsShadows="true" distanceBlending="false">
+            <Shape shapeId="4" name="branchesLOD1" nodeId="23" materialIds="6" castsShadows="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="5" name="proxyMeshLOD2" nodeId="24" materialIds="7" castsShadows="true" distanceBlending="false"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

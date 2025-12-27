@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="dead_wood.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="13" filename="$data/shaders/treeBillboardShader.xml"/>
+    <File fileId="8" filename="$data/shaders/treeBranchShader.xml"/>
+    <File fileId="3" filename="$data/shaders/treeTrunkShader.xml"/>
+    <File fileId="1" filename="texturedeadPine/lodgepolePineDeadTrunk_diffuse.png"/>
+    <File fileId="5" filename="texturedeadPine/lodgepolePineDeadTrunk_height.png"/>
+    <File fileId="2" filename="texturedeadPine/lodgepolePineDeadTrunk_normal.png"/>
+    <File fileId="9" filename="texturedeadPine/lodgepolePineLOD1_diffuse.png"/>
+    <File fileId="10" filename="texturedeadPine/lodgepolePineLOD1_normal.png"/>
+    <File fileId="11" filename="texturedeadPine/lodgepolePineStage02Var2LOD2_diffuse.png"/>
+    <File fileId="12" filename="texturedeadPine/lodgepolePineStage02Var2LOD2_normal.png"/>
+    <File fileId="6" filename="texturedeadPine/lodgepolePine_diffuse.png"/>
+    <File fileId="7" filename="texturedeadPine/lodgepolePine_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lodgepolePine_mat" materialId="5" customShaderId="8">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+    </Material>
+    <Material name="lodgepolePineDeadTrunk_mat" materialId="6" customShaderId="3" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="mParallaxMap" fileId="5"/>
+    </Material>
+    <Material name="lodgepolePineDeadTrunk_mat2" materialId="7" customShaderId="3" shadingRate="2x2">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="lodgepolePineLOD1_mat" materialId="8" customShaderId="8" shadingRate="2x2">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+    </Material>
+    <Material name="lodgepolePineStage02Var2LOD2_mat" materialId="9" customShaderId="13" customShaderVariation="billboard180" shadingRate="2x4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="dead_wood.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="deadwood" rotation="-180 115.172 180" nodeId="16" lodDistance="0 50 100">
+        <Shape shapeId="1" name="deadwoodLOD0" static="true" collisionMask="16791586" angularDamping="0.15" rollingFriction="0.27" density="0.52" clipDistance="500" nodeId="17" materialIds="6" castsShadows="true" receiveShadows="true" splitType="23" splitUvs="0 0 0.5 0.064 1.8">
+          <Shape shapeId="2" name="deadwoodLOD0Attachments" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="deadwoodLOD1" clipDistance="500" nodeId="19" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="4" name="deadwoodLOD0Branches" nodeId="20" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="deadwoodLOD2" clipDistance="1500" nodeId="21" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

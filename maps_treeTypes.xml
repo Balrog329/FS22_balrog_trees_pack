@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <treeTypes>
+        <treeType name="ponderosaPine" nameI18N="treeType_ponderosaPine" splitType="22" title="$l10n_storeItem_ponderosaPine" growthTimeHours="400" saplingPrice="0" canBeMarked="true">
+            <stage filename="treeSaplingPallet/treeSapling.i3d"/>
+            <stage filename="trees/ponderosaPine/PPO1.i3d"/>
+            <stage filename="trees/ponderosaPine/PPO2.i3d"/>
+			<stage filename="trees/ponderosaPine/PPO3.i3d"/>
+        </treeType>
+		<treeType name="lodgepolePine" nameI18N="treeType_lodgepolePine" splitType="21" title="$l10n_storeItem_lodgepolePine" growthTimeHours="500" saplingPrice="0" canBeMarked="true">
+	        <stage filename="treeSaplingPallet/treeSapling.i3d"/>
+			<stage filename="trees/lodgepolePine/PTO1.i3d"/>
+			<stage filename="trees/lodgepolePine/PTO2.i3d"/>
+			<stage filename="trees/lodgepolePine/PTO3.i3d"/>
+		</treeType>
+		<treeType name="deadwood" nameI18N="treeType_deadwood" splitType="23" title="$l10n_storeItem_deadwood" growthTimeHours="100" saplingPrice="0" canBeMarked="true">
+			<stage filename="trees/deadwood/dead_wood.i3d"/>
+		</treeType>
+		<treeType name="silverFir" nameI18N="treeType_silverFir" splitType="200" title="$l10n_storeItem_silverFir" growthTimeHours="600" saplingPrice="0" canBeMarked="true">
+	        <stage filename="trees/silverFir/silverFir_treeSapling.i3d"/>
+			<stage filename="trees/silverFir/silverFir_stage01.i3d"/>
+			<stage filename="trees/silverFir/silverFir_stage02.i3d"/>
+			<stage filename="trees/silverFir/silverFir_stage03.i3d"/>
+			<stage filename="trees/silverFir/silverFir_stage04.i3d"/>
+			<stage filename="trees/silverFir/silverFir_stage05.i3d"/>
+			<stage filename="trees/silverFir/silverFir_stage06.i3d"/>
+		</treeType>
+		<treeType name="tallBirch" nameI18N="treeType_tallBirch" splitType="201" title="$l10n_storeItem_tallBirch" growthTimeHours="400" saplingPrice="0" canBeMarked="true">
+	        <stage filename="treeSaplingPallet/treeSapling.i3d"/>
+			<stage filename="trees/tallBirch/tallBirch_stage01.i3d"/>
+			<stage filename="trees/tallBirch/tallBirch_stage02.i3d"/>
+			<stage filename="trees/tallBirch/tallBirch_stage03.i3d"/>
+			<stage filename="trees/tallBirch/tallBirch_stage04.i3d"/>
+			<stage filename="trees/tallBirch/tallBirch_stage05.i3d"/>
+		</treeType>
+		<treeType name="aspen" nameI18N="treeType_aspen" splitType="202" title="$l10n_storeItem_aspen" growthTimeHours="400" saplingPrice="0" canBeMarked="true">
+	        <stage filename="treeSaplingPallet/treeSapling.i3d"/>
+			<stage filename="trees/aspen/aspen_Stage01.i3d"/>
+			<stage filename="trees/aspen/aspen_Stage02.i3d"/>
+			<stage filename="trees/aspen/aspen_Stage03.i3d"/>
+			<stage filename="trees/aspen/aspen_Stage04.i3d"/>
+		</treeType>
+		<treeType name="spruce" nameI18N="treeType_spruce" splitType="203" title="$l10n_storeItem_picea" growthTimeHours="500" saplingPrice="0" canBeMarked="true">
+			<stage filename="treeSaplingPallet/treeSapling.i3d"/>
+			<stage filename="trees/picea_abies/picea_stage01.i3d"/>
+			<stage filename="trees/picea_abies/picea_stage02.i3d"/>
+			<stage filename="trees/picea_abies/picea_stage03.i3d"/>
+			<stage filename="trees/picea_abies/picea_stage04.i3d"/>
+			<stage filename="trees/picea_abies/picea_stage05.i3d"/>
+		</treeType>
+	</treeTypes>  
+</map>

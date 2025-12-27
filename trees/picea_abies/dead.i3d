@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="dead.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+    </Asset>
+    <Files>
+        <File fileId="7" filename="$data/shaders/treeBillboardShader.xml"/>
+        <File fileId="3" filename="$data/shaders/treeTrunkShader.xml"/>
+        <File fileId="5" filename="treeTextures/spruceTrunkLOD_diffuse_barkBeetle.dds"/>
+        <File fileId="6" filename="treeTextures/spruceTrunkLOD_normal_barkBeetle.dds"/>
+        <File fileId="1" filename="treeTextures/spruceTrunk_diffuse_barkBeetle.dds"/>
+        <File fileId="2" filename="treeTextures/spruceTrunk_normal_barkBeetle.dds"/>
+    </Files>
+    <Materials>
+        <Material name="deadTree_mat" materialId="114" customShaderId="3">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+        </Material>
+        <Material name="LODDead_mat" materialId="209" customShaderId="7" customShaderVariation="billboard180">
+            <Texture fileId="5"/>
+            <Normalmap fileId="6"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="dead.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="deadTree3" translation="-406.961 1.5214 118.232" rotation="0 113.38 0" clipDistance="500" nodeId="27462" lodDistance="0 80">
+            <Shape shapeId="1" name="LOD0" static="true" collisionMask="16791842" angularDamping="0.15" rollingFriction="0.27" density="0.33" nodeId="27463" materialIds="114" castsShadows="true" receiveShadows="true" splitType="1" splitUvs="0 0 1 0.064 1.8">
+                <Shape shapeId="2" name="attachments" nodeId="27464" materialIds="114" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="3" name="LOD1" nodeId="27465" materialIds="209" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

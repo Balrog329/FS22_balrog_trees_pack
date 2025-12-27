@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="silverFir_treeSapling.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/treeBranchShader.xml"/>
+    <File fileId="3" filename="silverFir/spruceBranch_diffuse.png"/>
+    <File fileId="4" filename="silverFir/spruceBranch_normal.png"/>
+    <File fileId="1" filename="silverFir/spruceTrunk_diffuse.png"/>
+    <File fileId="2" filename="silverFir/spruceTrunk_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="spruceBranch_mat" materialId="26" customShaderId="5">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+    </Material>
+    <Material name="treeTrunk_mat" materialId="27">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="silverFir_treeSapling.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="silverFir_treeSapling" clipDistance="299" nodeId="31">
+        <Shape shapeId="1" name="treeSapling" scale="1 0.15 1" clipDistance="50" nodeId="32" materialIds="27" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="2" name="LOD0Attachments" translation="0 -0.88 0" scale="0.09 0.37 0.09" nodeId="33" materialIds="26" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
