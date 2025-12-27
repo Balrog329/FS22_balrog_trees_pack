@@ -54,6 +54,7 @@
             <treeSaplingTypeConfiguration treeType="tallBirch" name="$l10n_treeType_tallBirch"/>
             <treeSaplingTypeConfiguration treeType="aspen" name="$l10n_treeType_aspen"/>
             <treeSaplingTypeConfiguration treeType="spruce" name="$l10n_treeType_spruce"/>
+            <treeSaplingTypeConfiguration treeType="pinusnigra" name="$l10n_treeType_pinusnigra"/>
         </treeSaplingTypeConfigurations>
 
         <saplingNodes>

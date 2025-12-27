@@ -1,0 +1,53 @@
+name: Build Mod ZIP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Lire la version actuelle
+        id: version
+        run: |
+          if [ -f version.txt ]; then
+            v=$(cat version.txt)
+            v=$((v+1))
+          else
+            v=1
+          fi
+          echo $v > version.txt
+          echo "version=$v" >> $GITHUB_OUTPUT
+
+      - name: Préparer les fichiers du mod
+        run: |
+          mkdir build
+          rsync -av \
+            --exclude='.github' \
+            --exclude='README.md' \
+            --exclude='CHANGELOG.md' \
+            --exclude='dist' \
+            --exclude='version.txt' \
+            ./ build/
+
+      - name: Créer le ZIP
+        run: |
+          mkdir -p dist
+          cd build
+          zip -r "../dist/FS22_balrog_trees_pack_V${{ steps.version.outputs.version }}.zip" .
+
+      - name: Commit & push ZIP + version
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add dist version.txt
+          git commit -m "Build v${{ steps.version.outputs.version }}"
+          git push

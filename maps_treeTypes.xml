@@ -48,5 +48,13 @@
 			<stage filename="trees/picea_abies/picea_stage04.i3d"/>
 			<stage filename="trees/picea_abies/picea_stage05.i3d"/>
 		</treeType>
+		<treeType name="pinusnigra" nameI18N="treeType_pinusnigra" splitType="204" title="$l10n_storeItem_pinusnigra" growthTimeHours="500" saplingPrice="0" canBeMarked="true">
+			<stage filename="treeSaplingPallet/treeSapling.i3d"/>
+			<stage filename="trees/pinus_nigra/pinusnigra_stage01.i3d"/>
+			<stage filename="trees/pinus_nigra/pinusnigra_stage02.i3d"/>
+			<stage filename="trees/pinus_nigra/pinusnigra_stage03.i3d"/>
+			<stage filename="trees/pinus_nigra/pinusnigra_stage04.i3d"/>
+		</treeType>
+
 	</treeTypes>  
 </map>

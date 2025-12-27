@@ -76,6 +76,10 @@
 		<storeItem xmlFilename="trees/picea_abies/picea_stage03.xml"/>
 		<storeItem xmlFilename="trees/picea_abies/picea_stage04.xml"/>
 		<storeItem xmlFilename="trees/picea_abies/picea_stage05.xml"/>
+		<storeItem xmlFilename="trees/pinus_nigra/pinusnigra_stage01.xml"/>
+		<storeItem xmlFilename="trees/pinus_nigra/pinusnigra_stage02.xml"/>
+		<storeItem xmlFilename="trees/pinus_nigra/pinusnigra_stage03.xml"/>
+		<storeItem xmlFilename="trees/pinus_nigra/pinusnigra_stage04.xml"/>
 
 
     </storeItems>	
@@ -100,6 +104,10 @@
             <en>aspen</en>
             <fr>peuplier tremble</fr>
 		</text>
+		<text name="treeType_pinusnigra">
+            <en>pinus nigra</en>
+            <fr>pinus laricio</fr>
+		</text>
 	    <text name="treeType_silverFir">
             <en>silver fir</en>
             <fr>sapin pectiné</fr>
@@ -112,6 +120,8 @@
           <en>dead wood</en>
           <fr>bois mort</fr>
         </text>
+
+		
 		<text name="storeItem_tallBirch_stage01">
 		  <en>young birch</en>
 		  <fr>jeune bouleau</fr>
@@ -216,6 +226,22 @@
 		<text name="storeItem_picea_stage05">
 		  <en>old spruce</en>
 		  <fr>vieil epicea commun</fr>
+		</text>
+		<text name="storeItem_pinusnigra_stage01">
+		  <en>young black pine</en>
+		  <fr>jeune pin larico</fr>
+		</text>
+		<text name="storeItem_pinusnigra_stage02">
+		  <en>little black pine</en>
+		  <fr>petit pin laricio</fr>
+		</text>
+		<text name="storeItem_pinusnigra_stage03">
+		  <en>mid black pine</en>
+		  <fr>pin laricio moyen</fr>
+		</text>
+		<text name="storeItem_pinusnigra_stage04">
+		  <en>tall black pine</en>
+		  <fr>grand pin laricio</fr>
 		</text>
 	</l10n>
 </modDesc>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pinusnigra_stage04.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="12" filename="$data/shaders/treeBillboardShader.xml"/>
+    <File fileId="9" filename="$data/shaders/treeBranchShader.xml"/>
+    <File fileId="3" filename="$data/shaders/treeTrunkShader.xml"/>
+    <File fileId="6" filename="texturepinusnigra/pinusnigraBranch_diffuse.png"/>
+    <File fileId="7" filename="texturepinusnigra/pinusnigraBranch_normal.png"/>
+    <File fileId="8" filename="texturepinusnigra/pinusnigraBranch_specular.png"/>
+    <File fileId="1" filename="texturepinusnigra/pinusnigraTrunk_diffuse.png"/>
+    <File fileId="5" filename="texturepinusnigra/pinusnigraTrunk_height.png"/>
+    <File fileId="2" filename="texturepinusnigra/pinusnigraTrunk_normal.png"/>
+    <File fileId="10" filename="texturepinusnigra/pinusnigra_stage04LOD_diffuse.dds"/>
+    <File fileId="11" filename="texturepinusnigra/pinusnigra_stage04LOD_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="pinusnigra_mat" materialId="5" customShaderId="9">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="pinusnigra_stage04LOD2_mat" materialId="6" customShaderId="12" customShaderVariation="billboard180" shadingRate="2x4">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+    </Material>
+    <Material name="pinusnigraTrunk_mat" materialId="7" customShaderId="3" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="mParallaxMap" fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pinusnigra_stage04.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="pinusnigra_stage04" translation="0 0 0" rotation="0" clipDistance="500" nodeId="12" lodDistance="0 40">
+        <Shape shapeId="1" name="LOD0" static="true" collisionMask="16791586" angularDamping="0.15" rollingFriction="0.27" density="0.52" nodeId="13" materialIds="7" receiveShadows="true" splitType="2" splitUvs="0 0 1 0.0625 1.8">
+          <Shape shapeId="2" name="LOD0Attachments" nodeId="14" materialIds="5" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="LOD1" nodeId="15" materialIds="6" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>
