@@ -70,6 +70,8 @@
 		<storeItem xmlFilename="trees/silverFir/silverFir_stage03.xml"/>
 		<storeItem xmlFilename="trees/silverFir/silverFir_stage04.xml"/>
 		<storeItem xmlFilename="trees/silverFir/silverFir_stage05.xml"/>
+		<storeItem xmlFilename="trees/silverFir/silverFir_stage06.xml"/>
+		<storeItem xmlFilename="trees/silverFir/silverFir_stage07.xml"/>
 		<storeItem xmlFilename="trees/deadwood/deadwood.xml"/>
 		<storeItem xmlFilename="trees/picea_abies/picea_stage01.xml"/>
 		<storeItem xmlFilename="trees/picea_abies/picea_stage02.xml"/>
@@ -205,6 +207,10 @@
 		<text name="storeItem_silverFir_stage06">
 		  <en>old silver fir</en>
 		  <fr>vieux sapin pectiné</fr>
+		</text>
+		<text name="storeItem_silverFir_stage07">
+		  <en>ancient silver fir</en>
+		  <fr>sapin pectiné ancien</fr>
 		</text>
 
 		<text name="storeItem_picea_stage01">
