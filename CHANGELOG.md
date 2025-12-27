@@ -13,3 +13,12 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 -
+
+## [1.0.2] - 2025-27-12
+### Added
+- new stage for the silver fir
+
+### Fixed
+- fixed LOD0 on silver fir stage 3
+
+### Changed
