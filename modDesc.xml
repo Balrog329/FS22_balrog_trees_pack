@@ -78,6 +78,7 @@
 		<storeItem xmlFilename="trees/picea_abies/picea_stage03.xml"/>
 		<storeItem xmlFilename="trees/picea_abies/picea_stage04.xml"/>
 		<storeItem xmlFilename="trees/picea_abies/picea_stage05.xml"/>
+		<storeItem xmlFilename="trees/picea_abies/picea_stage06.xml"/>
 		<storeItem xmlFilename="trees/pinus_nigra/pinusnigra_stage01.xml"/>
 		<storeItem xmlFilename="trees/pinus_nigra/pinusnigra_stage02.xml"/>
 		<storeItem xmlFilename="trees/pinus_nigra/pinusnigra_stage03.xml"/>
@@ -232,6 +233,10 @@
 		<text name="storeItem_picea_stage05">
 		  <en>old spruce</en>
 		  <fr>vieil epicea commun</fr>
+		</text>
+		<text name="storeItem_picea_stage06">
+		  <en>dead spruce</en>
+		  <fr>epicea commun scolyté</fr>
 		</text>
 		<text name="storeItem_pinusnigra_stage01">
 		  <en>young black pine</en>

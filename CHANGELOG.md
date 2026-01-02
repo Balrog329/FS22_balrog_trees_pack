@@ -22,3 +22,15 @@ All notable changes to this project will be documented in this file.
 - fixed LOD0 on silver fir stage 3
 
 ### Changed
+
+
+## [1.0.3] - 2026-02-01
+### Added
+- add dead spruce at stage 06
+
+### Fixed
+
+
+### Changed
+
+- changed texture of pinus nigra
